@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Verbat_TestAPP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lp-lR-vcx">
+                                <rect key="frame" x="16" y="602" width="73" height="30"/>
+                                <state key="normal" title="Swipe Left"/>
+                                <connections>
+                                    <action selector="swipeLeftAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZm-NE-AEd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-DL-NdH">
+                                <rect key="frame" x="275" y="602" width="84" height="30"/>
+                                <state key="normal" title="Swipe Right"/>
+                                <connections>
+                                    <action selector="swipeRightAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="toQ-So-pRz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJz-pj-NpZ">
+                                <rect key="frame" x="164" y="602" width="47" height="30"/>
+                                <state key="normal" title="Reload"/>
+                                <connections>
+                                    <action selector="reloadAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nw9-54-kbM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wJz-pj-NpZ" firstAttribute="width" secondItem="5lp-lR-vcx" secondAttribute="width" constant="-26" id="Cb5-or-QN4"/>
+                            <constraint firstItem="wJz-pj-NpZ" firstAttribute="height" secondItem="aSZ-DL-NdH" secondAttribute="height" id="DzL-LJ-eed"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wJz-pj-NpZ" secondAttribute="bottom" constant="35" id="HFE-zV-6xA"/>
+                            <constraint firstItem="5lp-lR-vcx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Mf7-KN-kjr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5lp-lR-vcx" secondAttribute="bottom" constant="35" id="NWx-Xc-js6"/>
+                            <constraint firstItem="wJz-pj-NpZ" firstAttribute="height" secondItem="5lp-lR-vcx" secondAttribute="height" id="Nbq-3S-wgA"/>
+                            <constraint firstItem="wJz-pj-NpZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q1P-VV-hIj"/>
+                            <constraint firstAttribute="trailing" secondItem="aSZ-DL-NdH" secondAttribute="trailing" constant="16" id="R8L-NK-voe"/>
+                            <constraint firstItem="wJz-pj-NpZ" firstAttribute="width" secondItem="aSZ-DL-NdH" secondAttribute="width" constant="-37" id="sPd-pd-vmD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aSZ-DL-NdH" secondAttribute="bottom" constant="35" id="x23-uu-X36"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
